@@ -21,6 +21,13 @@ describe("Word", () => {
       });
     });
 
+    describe("cap", () => {
+      it("Should capitalize the word", () => {
+        const testWord = new Word("test").cap;
+        expect(testWord).toEqual({ word: "TEST" });
+      });
+    });
+
     describe("setWord", () => {
       it("Should set the word to the argument that was passed", () => {
         const testWord = new Word("test");
