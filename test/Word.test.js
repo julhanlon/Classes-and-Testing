@@ -28,6 +28,16 @@ describe("Word", () => {
       });
     });
 
+    describe("isPal", () => {
+      it("Should check if word is a palindrome", () => {
+        const testWord = new Word("test");
+        const testWord2 = new Word("dad");
+
+        expect(testWord.isPal).toEqual(false);
+        expect(testWord2.isPal).toEqual(true);
+      });
+    });
+
     describe("setWord", () => {
       it("Should set the word to the argument that was passed", () => {
         const testWord = new Word("test");

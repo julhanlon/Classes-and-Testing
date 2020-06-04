@@ -15,6 +15,10 @@ class Word {
     return this.word;
   }
 
+  get isPal() {
+    return this.word === this.word.split("").reverse().join("");
+  }
+
   set setWord(wrd) {
     this.word = wrd;
   }
