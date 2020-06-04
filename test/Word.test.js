@@ -13,6 +13,14 @@ describe("Word", () => {
       });
     });
 
+    describe("rev", () => {
+      it("Should reverse the word", () => {
+        const testWord = new Word("test");
+        testWord.rev = "tset";
+        expect(testWord.rev).toEqual({ word: "tset" });
+      });
+    });
+
     describe("setWord", () => {
       it("Should set the word to the argument that was passed", () => {
         const testWord = new Word("test");
